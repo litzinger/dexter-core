@@ -2,8 +2,8 @@
 
 namespace Litzinger\DexterCore\Service\DocumentParsers;
 
-use DexterCore\Service\Options;
-use DexterCore\Service\Provider\AIProviderFactory;
+use Litzinger\DexterCore\Service\Options;
+use Litzinger\DexterCore\Service\Provider\AIProviderFactory;
 
 abstract class AbstractDocumentParser implements FileParserInterface
 {

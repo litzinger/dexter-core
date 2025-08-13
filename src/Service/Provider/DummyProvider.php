@@ -2,7 +2,7 @@
 
 namespace Litzinger\DexterCore\Service\Provider;
 
-use DexterCore\Service\Options;
+use Litzinger\DexterCore\Service\Options;
 
 class DummyProvider implements ProviderInterface
 {

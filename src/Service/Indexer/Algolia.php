@@ -3,10 +3,10 @@
 namespace Litzinger\DexterCore\Service\Indexer;
 
 use BoldMinded\Dexter\Dependency\Algolia\AlgoliaSearch\Api\SearchClient as Client;
-use DexterCore\Contracts\ConfigInterface;
-use DexterCore\Contracts\LoggerInterface;
-use DexterCore\Contracts\QueueInterface;
-use DexterCore\Contracts\TranslatorInterface;
+use Litzinger\DexterCore\Contracts\ConfigInterface;
+use Litzinger\DexterCore\Contracts\LoggerInterface;
+use Litzinger\DexterCore\Contracts\QueueInterface;
+use Litzinger\DexterCore\Contracts\TranslatorInterface;
 
 class Algolia implements IndexProvider
 {

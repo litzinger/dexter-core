@@ -3,8 +3,8 @@
 namespace Litzinger\DexterCore\Service\Search;
 
 use BoldMinded\Dexter\Dependency\Algolia\AlgoliaSearch\Api\SearchClient as Client;
-use DexterCore\Contracts\ConfigInterface;
-use DexterCore\Contracts\LoggerInterface;
+use Litzinger\DexterCore\Contracts\ConfigInterface;
+use Litzinger\DexterCore\Contracts\LoggerInterface;
 
 class Algolia implements SearchProvider
 {

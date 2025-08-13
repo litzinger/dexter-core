@@ -3,8 +3,8 @@
 namespace Litzinger\DexterCore\Service\Indexer;
 
 use BoldMinded\Dexter\Dependency\League\Pipeline\PipelineBuilder;
-use DexterCore\Contracts\ConfigInterface;
-use DexterCore\Contracts\IndexableInterface;
+use Litzinger\DexterCore\Contracts\ConfigInterface;
+use Litzinger\DexterCore\Contracts\IndexableInterface;
 
 class IndexEntryCommand implements IndexCommand
 {

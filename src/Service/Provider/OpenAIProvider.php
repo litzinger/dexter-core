@@ -3,7 +3,7 @@
 namespace Litzinger\DexterCore\Service\Provider;
 
 use BoldMinded\Dexter\Dependency\OpenAI;
-use DexterCore\Service\Options;
+use Litzinger\DexterCore\Service\Options;
 
 class OpenAIProvider implements ProviderInterface
 {

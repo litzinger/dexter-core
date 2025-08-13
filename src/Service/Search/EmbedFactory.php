@@ -2,7 +2,7 @@
 
 namespace Litzinger\DexterCore\Service\Search;
 
-use DexterCore\Contracts\ConfigInterface;
+use Litzinger\DexterCore\Contracts\ConfigInterface;
 
 class EmbedFactory
 {

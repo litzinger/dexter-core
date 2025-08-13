@@ -2,9 +2,9 @@
 
 namespace Litzinger\DexterCore\Service\Pipeline;
 
-use DexterCore\Contracts\ConfigInterface;
-use DexterCore\Contracts\IndexableInterface;
-use DexterCore\Service\FileParser;
+use Litzinger\DexterCore\Contracts\ConfigInterface;
+use Litzinger\DexterCore\Contracts\IndexableInterface;
+use Litzinger\DexterCore\Service\FileParser;
 
 class FileFullTextPipeline
 {

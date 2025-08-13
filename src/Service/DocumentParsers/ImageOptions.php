@@ -2,8 +2,8 @@
 
 namespace Litzinger\DexterCore\Service\DocumentParsers;
 
-use DexterCore\Service\Options;
-use DexterCore\Service\Provider\AIOptions;
+use Litzinger\DexterCore\Service\Options;
+use Litzinger\DexterCore\Service\Provider\AIOptions;
 
 class ImageOptions implements Options
 {

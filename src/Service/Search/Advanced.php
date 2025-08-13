@@ -2,11 +2,11 @@
 
 namespace Litzinger\DexterCore\Service\Search;
 
-use DexterCore\Contracts\ConfigInterface;
-use DexterCore\Contracts\LoggerInterface;
-use DexterCore\Service\Provider\AIOptions;
-use DexterCore\Service\Provider\AIProviderFactory;
-use DexterCore\Service\Provider\ProviderInterface;
+use Litzinger\DexterCore\Contracts\ConfigInterface;
+use Litzinger\DexterCore\Contracts\LoggerInterface;
+use Litzinger\DexterCore\Service\Provider\AIOptions;
+use Litzinger\DexterCore\Service\Provider\AIProviderFactory;
+use Litzinger\DexterCore\Service\Provider\ProviderInterface;
 
 class Advanced
 {

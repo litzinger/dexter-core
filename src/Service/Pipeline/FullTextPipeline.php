@@ -2,9 +2,9 @@
 
 namespace Litzinger\DexterCore\Service\Pipeline;
 
-use DexterCore\Contracts\ConfigInterface;
-use DexterCore\Contracts\IndexableInterface;
-use DexterCore\Service\StopWordRemover;
+use Litzinger\DexterCore\Contracts\ConfigInterface;
+use Litzinger\DexterCore\Contracts\IndexableInterface;
+use Litzinger\DexterCore\Service\StopWordRemover;
 
 class FullTextPipeline
 {

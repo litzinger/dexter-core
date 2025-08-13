@@ -2,11 +2,11 @@
 
 namespace Litzinger\DexterCore\Queue;
 
-use DexterCore\Contracts\ConfigInterface;
-use DexterCore\Contracts\IndexableRepositoryInterface;
-use DexterCore\Contracts\LoggerInterface;
-use DexterCore\Service\Indexer\IndexEntryCommand;
-use DexterCore\Service\Indexer\IndexProvider;
+use Litzinger\DexterCore\Contracts\ConfigInterface;
+use Litzinger\DexterCore\Contracts\IndexableRepositoryInterface;
+use Litzinger\DexterCore\Contracts\LoggerInterface;
+use Litzinger\DexterCore\Service\Indexer\IndexEntryCommand;
+use Litzinger\DexterCore\Service\Indexer\IndexProvider;
 
 class IndexEntryHandler
 {

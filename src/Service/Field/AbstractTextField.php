@@ -2,9 +2,9 @@
 
 namespace Litzinger\DexterCore\Service\Field;
 
-use DexterCore\Contracts\ConfigInterface;
-use DexterCore\Contracts\IndexableInterface;
-use DexterCore\Contracts\FieldTypeInterface;
+use Litzinger\DexterCore\Contracts\ConfigInterface;
+use Litzinger\DexterCore\Contracts\IndexableInterface;
+use Litzinger\DexterCore\Contracts\FieldTypeInterface;
 
 class AbstractTextField implements FieldTypeInterface
 {

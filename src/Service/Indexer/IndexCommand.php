@@ -2,7 +2,7 @@
 
 namespace Litzinger\DexterCore\Service\Indexer;
 
-use DexterCore\Contracts\QueueableCommand;
+use Litzinger\DexterCore\Contracts\QueueableCommand;
 
 interface IndexCommand extends QueueableCommand
 {
