@@ -2,7 +2,7 @@
 
 namespace Litzinger\DexterCore\Service\Indexer;
 
-use BoldMinded\Dexter\Dependency\League\Pipeline\PipelineBuilder;
+use League\Pipeline\PipelineBuilder;
 use Litzinger\DexterCore\Contracts\ConfigInterface;
 use Litzinger\DexterCore\Contracts\IndexableInterface;
 
