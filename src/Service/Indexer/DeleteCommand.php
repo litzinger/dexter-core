@@ -1,8 +1,8 @@
 <?php
 
-namespace BoldMinded\Dexter\Shared\Service\Indexer;
+namespace DexterCore\Service\Indexer;
 
-use BoldMinded\Dexter\Shared\Contracts\QueueableCommand;
+use DexterCore\Contracts\QueueableCommand;
 
 interface DeleteCommand extends QueueableCommand
 {

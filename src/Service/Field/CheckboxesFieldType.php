@@ -1,9 +1,9 @@
 <?php
 
-namespace BoldMinded\Dexter\Shared\Service\Field;
+namespace DexterCore\Service\Field;
 
-use BoldMinded\Dexter\Shared\Contracts\ConfigInterface;
-use BoldMinded\Dexter\Shared\Contracts\IndexableInterface;
+use DexterCore\Contracts\ConfigInterface;
+use DexterCore\Contracts\IndexableInterface;
 
 class CheckboxesFieldType extends AbstractField
 {

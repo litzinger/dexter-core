@@ -1,9 +1,9 @@
 <?php
 
-namespace BoldMinded\Dexter\Shared\Service\DocumentParsers;
+namespace DexterCore\Service\DocumentParsers;
 
-use BoldMinded\Dexter\Shared\Service\Options;
-use BoldMinded\Dexter\Shared\Service\Provider\AIProviderFactory;
+use DexterCore\Service\Options;
+use DexterCore\Service\Provider\AIProviderFactory;
 
 abstract class AbstractImageParser implements FileParserInterface
 {

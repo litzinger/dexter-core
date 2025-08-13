@@ -1,6 +1,6 @@
 <?php
 
-namespace BoldMinded\Dexter\Shared\Service\Field;
+namespace DexterCore\Service\Field;
 
 class RteFieldType extends AbstractTextField
 {

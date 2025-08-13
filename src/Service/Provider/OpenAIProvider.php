@@ -1,9 +1,9 @@
 <?php
 
-namespace BoldMinded\Dexter\Shared\Service\Provider;
+namespace DexterCore\Service\Provider;
 
 use BoldMinded\Dexter\Dependency\OpenAI;
-use BoldMinded\Dexter\Shared\Service\Options;
+use DexterCore\Service\Options;
 
 class OpenAIProvider implements ProviderInterface
 {

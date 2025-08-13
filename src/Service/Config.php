@@ -1,10 +1,10 @@
 <?php
 
-namespace BoldMinded\Dexter\Shared\Service;
+namespace DexterCore\Service;
 
-use BoldMinded\Dexter\Shared\Contracts\ConfigInterface;
-use BoldMinded\Dexter\Shared\Service\ConfigFile;
-use BoldMinded\Dexter\Shared\Exceptions\LogitConfigException;
+use DexterCore\Contracts\ConfigInterface;
+use DexterCore\Service\ConfigFile;
+use DexterCore\Exceptions\LogitConfigException;
 use BoldMinded\Dexter\Dependency\Adbar\Dot;
 
 class Config implements ConfigInterface

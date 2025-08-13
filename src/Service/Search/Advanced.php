@@ -1,12 +1,12 @@
 <?php
 
-namespace BoldMinded\Dexter\Shared\Service\Search;
+namespace DexterCore\Service\Search;
 
-use BoldMinded\Dexter\Shared\Contracts\ConfigInterface;
-use BoldMinded\Dexter\Shared\Contracts\LoggerInterface;
-use BoldMinded\Dexter\Shared\Service\Provider\AIOptions;
-use BoldMinded\Dexter\Shared\Service\Provider\AIProviderFactory;
-use BoldMinded\Dexter\Shared\Service\Provider\ProviderInterface;
+use DexterCore\Contracts\ConfigInterface;
+use DexterCore\Contracts\LoggerInterface;
+use DexterCore\Service\Provider\AIOptions;
+use DexterCore\Service\Provider\AIProviderFactory;
+use DexterCore\Service\Provider\ProviderInterface;
 
 class Advanced
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace BoldMinded\Dexter\Shared\Contracts;
+namespace DexterCore\Contracts;
 
 interface IndexableInterface
 {

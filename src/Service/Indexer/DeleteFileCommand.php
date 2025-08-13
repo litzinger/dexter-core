@@ -1,9 +1,9 @@
 <?php
 
-namespace BoldMinded\Dexter\Shared\Service\Indexer;
+namespace DexterCore\Service\Indexer;
 
-use BoldMinded\Dexter\Shared\Contracts\ConfigInterface;
-use BoldMinded\Dexter\Shared\Contracts\IndexableInterface;
+use DexterCore\Contracts\ConfigInterface;
+use DexterCore\Contracts\IndexableInterface;
 
 class DeleteFileCommand implements DeleteCommand
 {

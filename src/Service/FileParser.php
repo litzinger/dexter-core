@@ -1,11 +1,11 @@
 <?php
 
-namespace BoldMinded\Dexter\Shared\Service;
+namespace DexterCore\Service;
 
-use BoldMinded\Dexter\Shared\Contracts\ConfigInterface;
-use BoldMinded\Dexter\Shared\Contracts\LoggerInterface;
-use BoldMinded\Dexter\Shared\Contracts\IndexableInterface;
-use BoldMinded\Dexter\Shared\Service\DocumentParsers\FileParserFactory;
+use DexterCore\Contracts\ConfigInterface;
+use DexterCore\Contracts\LoggerInterface;
+use DexterCore\Contracts\IndexableInterface;
+use DexterCore\Service\DocumentParsers\FileParserFactory;
 
 class FileParser
 {

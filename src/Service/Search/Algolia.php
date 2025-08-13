@@ -1,10 +1,10 @@
 <?php
 
-namespace BoldMinded\Dexter\Shared\Service\Search;
+namespace DexterCore\Service\Search;
 
 use BoldMinded\Dexter\Dependency\Algolia\AlgoliaSearch\Api\SearchClient as Client;
-use BoldMinded\Dexter\Shared\Contracts\ConfigInterface;
-use BoldMinded\Dexter\Shared\Contracts\LoggerInterface;
+use DexterCore\Contracts\ConfigInterface;
+use DexterCore\Contracts\LoggerInterface;
 
 class Algolia implements SearchProvider
 {

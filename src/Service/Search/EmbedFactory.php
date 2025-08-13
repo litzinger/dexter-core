@@ -1,8 +1,8 @@
 <?php
 
-namespace BoldMinded\Dexter\Shared\Service\Search;
+namespace DexterCore\Service\Search;
 
-use BoldMinded\Dexter\Shared\Contracts\ConfigInterface;
+use DexterCore\Contracts\ConfigInterface;
 
 class EmbedFactory
 {

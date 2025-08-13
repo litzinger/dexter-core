@@ -1,12 +1,12 @@
 <?php
 
-namespace BoldMinded\Dexter\Shared\Service\Indexer;
+namespace DexterCore\Service\Indexer;
 
 use BoldMinded\Dexter\Dependency\Algolia\AlgoliaSearch\Api\SearchClient as Client;
-use BoldMinded\Dexter\Shared\Contracts\ConfigInterface;
-use BoldMinded\Dexter\Shared\Contracts\LoggerInterface;
-use BoldMinded\Dexter\Shared\Contracts\QueueInterface;
-use BoldMinded\Dexter\Shared\Contracts\TranslatorInterface;
+use DexterCore\Contracts\ConfigInterface;
+use DexterCore\Contracts\LoggerInterface;
+use DexterCore\Contracts\QueueInterface;
+use DexterCore\Contracts\TranslatorInterface;
 
 class Algolia implements IndexProvider
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace BoldMinded\Dexter\Shared\Service\Indexer;
+namespace DexterCore\Service\Indexer;
 
 class IndexCommandCollection implements CommandCollection
 {

@@ -1,8 +1,8 @@
 <?php
 
-namespace BoldMinded\Dexter\Shared\Service\DocumentParsers;
+namespace DexterCore\Service\DocumentParsers;
 
-use BoldMinded\Dexter\Shared\Contracts\ConfigInterface;
+use DexterCore\Contracts\ConfigInterface;
 
 class FileParserFactory
 {

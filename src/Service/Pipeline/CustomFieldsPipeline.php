@@ -1,10 +1,10 @@
 <?php
 
-namespace BoldMinded\Dexter\Shared\Service\Pipeline;
+namespace DexterCore\Service\Pipeline;
 
-use BoldMinded\Dexter\Shared\Contracts\ConfigInterface;
-use BoldMinded\Dexter\Shared\Contracts\IndexableInterface;
-use BoldMinded\Dexter\Shared\Contracts\FieldTypeHandlerFactoryInterface;
+use DexterCore\Contracts\ConfigInterface;
+use DexterCore\Contracts\IndexableInterface;
+use DexterCore\Contracts\FieldTypeHandlerFactoryInterface;
 use DateTimeInterface;
 
 class CustomFieldsPipeline

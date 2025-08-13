@@ -1,14 +1,14 @@
 <?php
 
-namespace BoldMinded\Dexter\Shared\Service\Indexer;
+namespace DexterCore\Service\Indexer;
 
 use BoldMinded\Dexter\Dependency\Meilisearch\Client;
 use BoldMinded\Dexter\Dependency\Meilisearch\Contracts\Index\Embedders;
 use BoldMinded\Dexter\Dependency\Meilisearch\Contracts\Index\Settings;
-use BoldMinded\Dexter\Shared\Contracts\ConfigInterface;
-use BoldMinded\Dexter\Shared\Contracts\LoggerInterface;
-use BoldMinded\Dexter\Shared\Contracts\QueueInterface;
-use BoldMinded\Dexter\Shared\Contracts\TranslatorInterface;
+use DexterCore\Contracts\ConfigInterface;
+use DexterCore\Contracts\LoggerInterface;
+use DexterCore\Contracts\QueueInterface;
+use DexterCore\Contracts\TranslatorInterface;
 
 class Meilisearch implements IndexProvider
 {

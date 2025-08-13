@@ -1,8 +1,8 @@
 <?php
 
-namespace BoldMinded\Dexter\Shared\Service\Provider;
+namespace DexterCore\Service\Provider;
 
-use BoldMinded\Dexter\Shared\Service\Options;
+use DexterCore\Service\Options;
 
 class AIOptions implements Options
 {

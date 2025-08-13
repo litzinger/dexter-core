@@ -1,12 +1,12 @@
 <?php
 
-namespace BoldMinded\Dexter\Shared\Queue;
+namespace DexterCore\Queue;
 
-use BoldMinded\Dexter\Shared\Contracts\ConfigInterface;
-use BoldMinded\Dexter\Shared\Contracts\IndexableRepositoryInterface;
-use BoldMinded\Dexter\Shared\Contracts\LoggerInterface;
-use BoldMinded\Dexter\Shared\Service\Indexer\IndexFileCommand;
-use BoldMinded\Dexter\Shared\Service\Indexer\IndexProvider;
+use DexterCore\Contracts\ConfigInterface;
+use DexterCore\Contracts\IndexableRepositoryInterface;
+use DexterCore\Contracts\LoggerInterface;
+use DexterCore\Service\Indexer\IndexFileCommand;
+use DexterCore\Service\Indexer\IndexProvider;
 
 class IndexFileHandler
 {

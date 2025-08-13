@@ -1,6 +1,6 @@
 <?php
 
-namespace BoldMinded\Dexter\Shared\Service;
+namespace DexterCore\Service;
 
 class StopWordRemover
 {

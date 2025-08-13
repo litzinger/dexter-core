@@ -1,10 +1,10 @@
 <?php
 
-namespace BoldMinded\Dexter\Shared\Service\Indexer;
+namespace DexterCore\Service\Indexer;
 
 use BoldMinded\Dexter\Dependency\League\Pipeline\PipelineBuilder;
-use BoldMinded\Dexter\Shared\Contracts\ConfigInterface;
-use BoldMinded\Dexter\Shared\Contracts\IndexableInterface;
+use DexterCore\Contracts\ConfigInterface;
+use DexterCore\Contracts\IndexableInterface;
 
 class IndexEntryCommand implements IndexCommand
 {

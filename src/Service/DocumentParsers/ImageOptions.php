@@ -1,9 +1,9 @@
 <?php
 
-namespace BoldMinded\Dexter\Shared\Service\DocumentParsers;
+namespace DexterCore\Service\DocumentParsers;
 
-use BoldMinded\Dexter\Shared\Service\Options;
-use BoldMinded\Dexter\Shared\Service\Provider\AIOptions;
+use DexterCore\Service\Options;
+use DexterCore\Service\Provider\AIOptions;
 
 class ImageOptions implements Options
 {
