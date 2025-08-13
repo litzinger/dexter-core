@@ -1,6 +1,6 @@
 <?php
 
-namespace DexterCore\Service\Field;
+namespace Litzinger\DexterCore\Service\Field;
 
 use DexterCore\Contracts\ConfigInterface;
 use DexterCore\Contracts\IndexableInterface;

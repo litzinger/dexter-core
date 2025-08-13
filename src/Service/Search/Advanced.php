@@ -1,6 +1,6 @@
 <?php
 
-namespace DexterCore\Service\Search;
+namespace Litzinger\DexterCore\Service\Search;
 
 use DexterCore\Contracts\ConfigInterface;
 use DexterCore\Contracts\LoggerInterface;

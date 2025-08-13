@@ -1,6 +1,6 @@
 <?php
 
-namespace DexterCore\Service\Search;
+namespace Litzinger\DexterCore\Service\Search;
 
 use BoldMinded\Dexter\Dependency\Algolia\AlgoliaSearch\Api\SearchClient as Client;
 use DexterCore\Contracts\ConfigInterface;

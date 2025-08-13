@@ -1,6 +1,6 @@
 <?php
 
-namespace DexterCore\Service\Indexer;
+namespace Litzinger\DexterCore\Service\Indexer;
 
 use BoldMinded\Dexter\Dependency\Meilisearch\Client;
 use BoldMinded\Dexter\Dependency\Meilisearch\Contracts\Index\Embedders;

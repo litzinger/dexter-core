@@ -1,6 +1,6 @@
 <?php
 
-namespace DexterCore\Queue;
+namespace Litzinger\DexterCore\Queue;
 
 use DexterCore\Contracts\ConfigInterface;
 use DexterCore\Contracts\IndexableRepositoryInterface;

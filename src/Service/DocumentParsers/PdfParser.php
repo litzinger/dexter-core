@@ -1,6 +1,6 @@
 <?php
 
-namespace DexterCore\Service\DocumentParsers;
+namespace Litzinger\DexterCore\Service\DocumentParsers;
 
 use BoldMinded\Dexter\Dependency\Smalot\PdfParser\Parser;
 

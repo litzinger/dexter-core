@@ -1,6 +1,6 @@
 <?php
 
-namespace DexterCore\Service\Search;
+namespace Litzinger\DexterCore\Service\Search;
 
 interface SearchProvider
 {

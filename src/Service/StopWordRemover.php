@@ -1,6 +1,6 @@
 <?php
 
-namespace DexterCore\Service;
+namespace Litzinger\DexterCore\Service;
 
 class StopWordRemover
 {

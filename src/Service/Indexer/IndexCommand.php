@@ -1,6 +1,6 @@
 <?php
 
-namespace DexterCore\Service\Indexer;
+namespace Litzinger\DexterCore\Service\Indexer;
 
 use DexterCore\Contracts\QueueableCommand;
 

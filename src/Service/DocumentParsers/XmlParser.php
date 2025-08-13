@@ -1,6 +1,6 @@
 <?php
 
-namespace DexterCore\Service\DocumentParsers;
+namespace Litzinger\DexterCore\Service\DocumentParsers;
 
 class XmlParser extends AbstractDocumentParser
 {

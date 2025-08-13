@@ -1,6 +1,6 @@
 <?php
 
-namespace DexterCore\Service\Provider;
+namespace Litzinger\DexterCore\Service\Provider;
 
 use DexterCore\Service\Options;
 

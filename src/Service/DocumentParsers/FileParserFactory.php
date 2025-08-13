@@ -1,6 +1,6 @@
 <?php
 
-namespace DexterCore\Service\DocumentParsers;
+namespace Litzinger\DexterCore\Service\DocumentParsers;
 
 use DexterCore\Contracts\ConfigInterface;
 

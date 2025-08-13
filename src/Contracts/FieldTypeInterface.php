@@ -1,6 +1,6 @@
 <?php
 
-namespace DexterCore\Contracts;
+namespace Litzinger\DexterCore\Contracts;
 
 interface FieldTypeInterface
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace DexterCore\Service\Pipeline;
+namespace Litzinger\DexterCore\Service\Pipeline;
 
 use DexterCore\Contracts\ConfigInterface;
 use DexterCore\Contracts\IndexableInterface;
