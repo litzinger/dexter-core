@@ -21,7 +21,7 @@
   },
   "autoload-dev": {
     "psr-4": {
-      "DexterCore\\": "src/"
+      "Litzinger\\DexterCore\\": "src/"
     }
   }
 }
