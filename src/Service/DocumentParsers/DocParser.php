@@ -2,7 +2,7 @@
 
 namespace Litzinger\DexterCore\Service\DocumentParsers;
 
-use BoldMinded\Dexter\Dependency\PhpOffice\PhpWord\IOFactory;
+use PhpOffice\PhpWord\IOFactory;
 
 class DocParser extends AbstractDocumentParser
 {

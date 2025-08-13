@@ -2,7 +2,7 @@
 
 namespace Litzinger\DexterCore\Service\DocumentParsers;
 
-use BoldMinded\Dexter\Dependency\Smalot\PdfParser\Parser;
+use Smalot\PdfParser\Parser;
 
 class PdfParser extends AbstractDocumentParser
 {

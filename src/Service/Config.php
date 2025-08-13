@@ -2,10 +2,8 @@
 
 namespace Litzinger\DexterCore\Service;
 
+use Adbar\Dot;
 use Litzinger\DexterCore\Contracts\ConfigInterface;
-use Litzinger\DexterCore\Service\ConfigFile;
-use Litzinger\DexterCore\Exceptions\LogitConfigException;
-use BoldMinded\Dexter\Dependency\Adbar\Dot;
 
 class Config implements ConfigInterface
 {

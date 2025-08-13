@@ -2,7 +2,7 @@
 
 namespace Litzinger\DexterCore\Service\Indexer;
 
-use BoldMinded\Dexter\Dependency\Algolia\AlgoliaSearch\Api\SearchClient as Client;
+use Algolia\AlgoliaSearch\Api\SearchClient as Client;
 use Litzinger\DexterCore\Contracts\ConfigInterface;
 use Litzinger\DexterCore\Contracts\LoggerInterface;
 use Litzinger\DexterCore\Contracts\QueueInterface;

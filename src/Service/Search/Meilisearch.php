@@ -2,7 +2,7 @@
 
 namespace Litzinger\DexterCore\Service\Search;
 
-use BoldMinded\Dexter\Dependency\Meilisearch\Client;
+use Meilisearch\Client;
 use Litzinger\DexterCore\Contracts\ConfigInterface;
 use Litzinger\DexterCore\Contracts\LoggerInterface;
 

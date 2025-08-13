@@ -2,9 +2,9 @@
 
 namespace Litzinger\DexterCore\Service\Indexer;
 
-use BoldMinded\Dexter\Dependency\Meilisearch\Client;
-use BoldMinded\Dexter\Dependency\Meilisearch\Contracts\Index\Embedders;
-use BoldMinded\Dexter\Dependency\Meilisearch\Contracts\Index\Settings;
+use Meilisearch\Client;
+use Meilisearch\Contracts\Index\Embedders;
+use Meilisearch\Contracts\Index\Settings;
 use Litzinger\DexterCore\Contracts\ConfigInterface;
 use Litzinger\DexterCore\Contracts\LoggerInterface;
 use Litzinger\DexterCore\Contracts\QueueInterface;
