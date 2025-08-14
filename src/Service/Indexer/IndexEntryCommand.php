@@ -13,6 +13,7 @@ class IndexEntryCommand implements IndexCommand
         public IndexableInterface $indexable,
         public ConfigInterface $config,
         public array $pipelines,
+        public string $queueJobName,
     ) {
     }
 
@@ -51,6 +52,6 @@ class IndexEntryCommand implements IndexCommand
 
     public function getQueueJobName(): string
     {
-        return 'index-entry';
+        return $this->queueJobName;
     }
 }

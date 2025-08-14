@@ -39,9 +39,6 @@ class IndexEntryHandler
                 return true; // No entry, so we're done.
             }
 
-            // In EE, we would fire a hook here to allow config overrides.
-            // The logic for that will be in the EE-specific job.
-
             $indices = $this->config->get('indices');
             $indexName = $indices['channel_' . $indexable->get('channel_id')] ?? null;
 

@@ -13,6 +13,7 @@ class IndexFileCommand implements IndexCommand
         public IndexableInterface $indexable,
         public ConfigInterface $config,
         public array $pipelines,
+        public string $queueJobName,
     ) {
     }
 
@@ -51,6 +52,6 @@ class IndexFileCommand implements IndexCommand
 
     public function getQueueJobName(): string
     {
-        return 'index-file';
+        return $this->queueJobName;
     }
 }
