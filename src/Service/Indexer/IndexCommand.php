@@ -15,4 +15,6 @@ interface IndexCommand extends QueueableCommand
     public function getId(): int;
 
     public function getUniqueId(): string;
+
+    public function getQueueJobName(): string;
 }
