@@ -11,6 +11,7 @@ class DeleteFileCommand implements DeleteCommand
         public string $indexName,
         public IndexableInterface $indexable,
         public ConfigInterface $config,
+        public string $queueJobName,
     ) {
     }
 

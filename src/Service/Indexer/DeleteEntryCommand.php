@@ -11,6 +11,7 @@ class DeleteEntryCommand implements DeleteCommand
         public string $indexName,
         public IndexableInterface $indexable,
         public ConfigInterface $config,
+        public string $queueJobName,
     ) {
     }
 
@@ -36,6 +37,6 @@ class DeleteEntryCommand implements DeleteCommand
 
     public function getQueueJobName(): string
     {
-        return 'delete-entry';
+        return $this->queueJobName;
     }
 }
