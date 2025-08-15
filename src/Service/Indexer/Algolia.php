@@ -38,7 +38,7 @@ class Algolia implements IndexProvider
         bool $shouldQueue = true
     ): IndexerResponse {
         if ($this->shouldUseQueue && $shouldQueue) {
-            $this->queue->push($command->getQueueJob(), $command->getValues());
+            $this->queue->push($command->getQueueJobName(), $command->getValues());
 
             return (new IndexerResponse())
                 ->setSaved(1)
@@ -100,7 +100,7 @@ class Algolia implements IndexProvider
         if ($this->shouldUseQueue) {
             /** @var IndexCommand $command */
             foreach ($collection->getCommands() as $command) {
-                $this->queue->push($command->getQueueJob(), $command->getValues());
+                $this->queue->push($command->getQueueJobName(), $command->getValues());
             }
 
             return (new IndexerResponse())
