@@ -6,6 +6,8 @@ interface CustomFieldInterface
 {
     public function getName(): string;
 
+    public function getId(): int|string;
+
     public function getType(): string;
 
     public function getSettings(): array;
