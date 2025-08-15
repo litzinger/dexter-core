@@ -3,7 +3,6 @@
 namespace Litzinger\DexterCore\Service\Indexer;
 
 use Meilisearch\Client;
-use Meilisearch\Contracts\Index\Embedders;
 use Meilisearch\Contracts\Index\Settings;
 use Litzinger\DexterCore\Contracts\ConfigInterface;
 use Litzinger\DexterCore\Contracts\LoggerInterface;
@@ -47,6 +46,8 @@ class Meilisearch implements IndexProvider
                 ->setSaved(1)
                 ->setMessage($this->translator->get('dexter_msg_body_index_success_queue'));
         }
+
+        $values = [];
 
         try {
             $values = $command->execute();
@@ -92,10 +93,15 @@ class Meilisearch implements IndexProvider
         } catch (\Exception $e) {
             $this->logger->debug($e->getMessage());
 
-            return (new IndexerResponse())
+            $response = (new IndexerResponse())
                 ->setSuccess(false)
-                ->addError($e->getMessage())
-                ->addError(json_encode($values, true));
+                ->addError($e->getMessage());
+
+            if (!empty($values)) {
+                $response->addError(json_encode($values, true));
+            }
+
+            return $response;
         }
     }
 

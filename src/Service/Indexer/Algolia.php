@@ -46,6 +46,8 @@ class Algolia implements IndexProvider
                 ->setMessage($this->translator->get('dexter_msg_body_index_success_queue'));
         }
 
+        $values = [];
+
         try {
             $values = $command->execute();
             $indexName = $command->getIndexName();
@@ -78,10 +80,15 @@ class Algolia implements IndexProvider
         } catch (\Exception $e) {
             $this->logger->debug($e->getMessage());
 
-            return (new IndexerResponse())
+            $response = (new IndexerResponse())
                 ->setSuccess(false)
-                ->addError($e->getMessage())
-                ->addError(json_encode($document, true));
+                ->addError($e->getMessage());
+
+            if (!empty($values)) {
+                $response->addError(json_encode($values, true));
+            }
+
+            return $response;
         }
     }
 

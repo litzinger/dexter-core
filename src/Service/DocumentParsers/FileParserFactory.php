@@ -102,7 +102,7 @@ class FileParserFactory
 
     private function detectMimeType(string $filePath): string
     {
-        $mimeType = mime_content_type($filePath);
+        $mimeType = @mime_content_type($filePath);
 
         if ($mimeType === false) {
             // Fallback to file extension
