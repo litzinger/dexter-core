@@ -2,9 +2,9 @@
 
 namespace Litzinger\DexterCore\Service\Indexer;
 
-use BoldMinded\Dexter\Dependency\Litzinger\DexterCore\Contracts\FieldTypeHandlerFactoryInterface;
 use League\Pipeline\PipelineBuilder;
 use Litzinger\DexterCore\Contracts\ConfigInterface;
+use Litzinger\DexterCore\Contracts\FieldTypeHandlerFactoryInterface;
 use Litzinger\DexterCore\Contracts\IndexableInterface;
 
 class IndexEntryCommand implements IndexCommand
