@@ -2,6 +2,7 @@
 
 namespace Litzinger\DexterCore\Service\Indexer;
 
+use BoldMinded\Dexter\Dependency\Litzinger\DexterCore\Contracts\FieldTypeHandlerFactoryInterface;
 use League\Pipeline\PipelineBuilder;
 use Litzinger\DexterCore\Contracts\ConfigInterface;
 use Litzinger\DexterCore\Contracts\IndexableInterface;
@@ -11,6 +12,7 @@ class IndexEntryCommand implements IndexCommand
     public function __construct(
         public string $indexName,
         public IndexableInterface $indexable,
+        public FieldTypeHandlerFactoryInterface $fieldTypeHandlerFactory,
         public ConfigInterface $config,
         public array $pipelines,
         public string $queueJobName,
@@ -22,7 +24,13 @@ class IndexEntryCommand implements IndexCommand
         $pipelineBuilder = new PipelineBuilder;
 
         foreach ($this->pipelines as $pipelineClass) {
-            $pipelineBuilder->add(new $pipelineClass($this->indexable, $this->config));
+            $pipelineBuilder->add(
+                new $pipelineClass(
+                    $this->indexable,
+                    $this->config,
+                    $this->fieldTypeHandlerFactory
+                )
+            );
         }
 
         $pipelines = $pipelineBuilder->build();

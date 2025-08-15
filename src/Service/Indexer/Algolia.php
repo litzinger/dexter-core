@@ -46,9 +46,8 @@ class Algolia implements IndexProvider
                 ->setMessage($this->translator->get('dexter_msg_body_index_success_queue'));
         }
 
-        $values = $command->execute();
-
         try {
+            $values = $command->execute();
             $indexName = $command->getIndexName();
 
             if (!$indexName) {

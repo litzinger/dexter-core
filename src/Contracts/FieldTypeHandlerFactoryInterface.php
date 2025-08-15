@@ -4,5 +4,5 @@ namespace Litzinger\DexterCore\Contracts;
 
 interface FieldTypeHandlerFactoryInterface
 {
-    public function create(string $fieldType): ?FieldTypeInterface;
+    public static function create(string $fieldType): ?FieldTypeInterface;
 }
