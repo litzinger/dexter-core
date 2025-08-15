@@ -10,11 +10,11 @@ class CheckboxesFieldType extends AbstractField
     public function process(
         IndexableInterface $indexable,
         ConfigInterface $config,
-        $fieldId,
-        $fieldSettings,
-        $value,
+        int $fieldId,
+        array $fieldSettings,
+        $fieldValue,
         $fieldFacade = null
-    ) {
-        return explode('|', $value);
+    ): mixed {
+        return explode('|', $fieldValue);
     }
 }

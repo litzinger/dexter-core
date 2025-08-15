@@ -4,6 +4,8 @@ namespace Litzinger\DexterCore\Contracts;
 
 interface IndexableInterface
 {
+    public function getEntity();
+
     public function get(string $key): mixed;
 
     public function getValues(): array;
