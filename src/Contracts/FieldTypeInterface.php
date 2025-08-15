@@ -10,7 +10,7 @@ interface FieldTypeInterface
         int $fieldId,
         array $fieldSettings,
         $fieldValue,
-        object $fieldFacade
+        $fieldFacade = null
     ): mixed;
 
     public function setsMultipleProperties(): bool;

@@ -11,12 +11,12 @@ class AbstractField implements FieldTypeInterface
     public function process(
         IndexableInterface $indexable,
         ConfigInterface $config,
-        $fieldId,
-        $fieldSettings,
-        $value,
+        int $fieldId,
+        array $fieldSettings,
+        $fieldValue,
         $fieldFacade = null
-    ) {
-        return $value;
+    ): mixed {
+        return $fieldValue;
     }
 
     public function setsMultipleProperties(): bool
