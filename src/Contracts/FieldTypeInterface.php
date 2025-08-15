@@ -9,7 +9,7 @@ interface FieldTypeInterface
         ConfigInterface $config,
         int $fieldId,
         array $fieldSettings,
-        $fieldValue,
+        mixed $fieldValue,
         $fieldFacade = null
     ): mixed;
 
