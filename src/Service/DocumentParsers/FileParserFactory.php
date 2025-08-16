@@ -2,6 +2,7 @@
 
 namespace Litzinger\DexterCore\Service\DocumentParsers;
 
+use League\MimeTypeDetection\FinfoMimeTypeDetector;
 use Litzinger\DexterCore\Contracts\ConfigInterface;
 
 class FileParserFactory
@@ -102,31 +103,8 @@ class FileParserFactory
 
     private function detectMimeType(string $filePath): string
     {
-        $mimeType = @mime_content_type($filePath);
-
-        if ($mimeType === false) {
-            // Fallback to file extension
-            $extension = strtolower(pathinfo($filePath, PATHINFO_EXTENSION));
-            $extensionMap = [
-                'pdf' => 'application/pdf',
-                'txt' => 'text/plain',
-                'csv' => 'text/csv',
-                'xml' => 'application/xml',
-                'doc' => 'application/msword',
-                'docx' => 'application/vnd.openxmlformats-officedocument.wordprocessingml.document',
-                'jpeg' => 'image/jpeg',
-                'jpg' => 'image/jpeg',
-                'png' => 'image/png',
-                'gif' => 'image/gif',
-                'webp' => 'image/webp',
-            ];
-
-            if (isset($extensionMap[$extension])) {
-                return $extensionMap[$extension];
-            }
-
-            throw new \RuntimeException(sprintf('Could not detect MIME type for file: %s', $filePath));
-        }
+        $detector = new FinfoMimeTypeDetector();
+        $mimeType = $detector->detectMimeTypeFromFile($filePath);
 
         return $mimeType;
     }
