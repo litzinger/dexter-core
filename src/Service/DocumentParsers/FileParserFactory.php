@@ -2,7 +2,6 @@
 
 namespace Litzinger\DexterCore\Service\DocumentParsers;
 
-use League\MimeTypeDetection\FinfoMimeTypeDetector;
 use Litzinger\DexterCore\Contracts\ConfigInterface;
 
 class FileParserFactory
@@ -103,8 +102,8 @@ class FileParserFactory
 
     private function detectMimeType(string $filePath): string
     {
-        $detector = new FinfoMimeTypeDetector();
-        $mimeType = $detector->detectMimeTypeFromFile($filePath);
+        $detector = new MimeDetector();
+        $mimeType = $detector->detect($filePath);
 
         return $mimeType;
     }
