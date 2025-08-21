@@ -8,5 +8,5 @@ interface ConfigInterface
 
     public function getAll(): array;
 
-    public function setAll(array $config): void;
+    public function setAll(array $options): void;
 }

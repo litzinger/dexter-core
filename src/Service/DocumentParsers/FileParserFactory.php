@@ -37,10 +37,14 @@ class FileParserFactory
         }
     }
 
-    public function createParser(string $mimeType): FileParserInterface
+    public function createParser(string $mimeType, string $filePath = ''): FileParserInterface
     {
         if (!isset($this->mimeTypeMap[$mimeType])) {
-            throw new \InvalidArgumentException(sprintf('Unsupported MIME type: %s', $mimeType));
+            throw new \InvalidArgumentException(sprintf(
+                'Unsupported MIME type: %s for %s',
+                $mimeType,
+                $filePath ? 'file at ' . $filePath : 'unknown file'
+            ));
         }
 
         $className = $this->mimeTypeMap[$mimeType];
@@ -56,7 +60,7 @@ class FileParserFactory
             $mimeType = $this->detectMimeType($filePath);
         }
 
-        $parser = $this->createParser($mimeType);
+        $parser = $this->createParser($mimeType, $filePath);
         return $parser->parse($filePath, $this->buildOptions($mimeType, $options));
     }
 
@@ -69,7 +73,7 @@ class FileParserFactory
             $mimeType = $this->detectMimeType($filePath);
         }
 
-        $parser = $this->createParser($mimeType);
+        $parser = $this->createParser($mimeType, $filePath);
         return $parser->describe($filePath, $this->buildOptions($mimeType, $options));
     }
 
