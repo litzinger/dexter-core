@@ -47,7 +47,7 @@ class Config implements ConfigInterface
 
         // Indices are special. We want to prefix each index with the environment name, so we
         // can have a staging_whatever, prod_whatever of the indexes for each environment.
-        if ($key === 'indices') {
+        if (str_contains($key, 'indices.')) {
             $env = $this->get('env');
             $suffix = $this->get('suffix');
 
