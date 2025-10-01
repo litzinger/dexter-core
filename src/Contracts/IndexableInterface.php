@@ -22,12 +22,4 @@ interface IndexableInterface
      * @return CustomFieldInterface[]
      */
     public function getCustomFields(): array;
-
-    public function getMimeType(): string;
-
-    public function getAbsoluteUrl(): string;
-
-    public function getAbsolutePath(): string;
-
-    public function isImage(): bool;
 }
