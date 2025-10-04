@@ -11,13 +11,18 @@ class Config implements ConfigInterface
 
     private array $options = [];
 
-    public function __construct(ConfigFile $configFile, array $userConfig = [])
-    {
+    public function __construct(
+        ConfigFile $configFile,
+        array $userConfig = []
+    ) {
         $this->defaultSettings = $configFile->get('settings');
         $this->options = $this->array_merge_recursive_distinct($this->defaultSettings, $userConfig);
     }
 
-    private function array_merge_recursive_distinct(array &$array1, array &$array2): array
+    private function array_merge_recursive_distinct(
+        array &$array1,
+        array &$array2
+    ): array
     {
         foreach ($array2 as $key => $value) {
             if (isset($array1[$key])) {
@@ -41,7 +46,11 @@ class Config implements ConfigInterface
         return $array1;
     }
 
-    public function get(string $key, string|null $index = null, array|null $values = null): mixed
+    public function get(
+        string $key,
+        string|null $index = null,
+        array|null $values = null,
+    ): mixed
     {
         $value = (new Dot($this->options))->get($key);
 
