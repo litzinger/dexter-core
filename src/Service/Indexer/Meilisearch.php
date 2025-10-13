@@ -182,6 +182,15 @@ class Meilisearch implements IndexProvider
     ): IndexerResponse {
         try {
             if ($command->getIndexName()) {
+                if ($this->shouldUseQueue && $shouldQueue) {
+                    $this->queue->push($command->getQueueJobName(), ['id' => $command->getUniqueId()]);
+
+                    return (new IndexerResponse())
+                        ->setSuccess(true)
+                        ->setDeleted(1)
+                        ->setMessage($this->translator->get('dexter_msg_body_delete_success_queue'));
+                }
+
                 $task = $this->client->index($command->getIndexName())->deleteDocument($command->getUniqueId());
 
                 $response = $this->client->waitForTask($task['taskUid']);

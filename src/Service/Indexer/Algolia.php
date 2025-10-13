@@ -161,13 +161,20 @@ class Algolia implements IndexProvider
 
     public function delete(
         DeleteCommand $command,
-        bool $shouldQueue = true // @todo: Implement queueing for delete commands
+        bool $shouldQueue = true
     ): IndexerResponse {
         try {
-            $indexName = $command->getIndexName();
+            if ($command->getIndexName()) {
+                if ($this->shouldUseQueue && $shouldQueue) {
+                    $this->queue->push($command->getQueueJobName(), ['id' => $command->getUniqueId()]);
 
-            if ($indexName) {
-                $this->client->deleteObject($indexName, $command->getUniqueId());
+                    return (new IndexerResponse())
+                        ->setSuccess(true)
+                        ->setDeleted(1)
+                        ->setMessage($this->translator->get('dexter_msg_body_delete_success_queue'));
+                }
+
+                $this->client->deleteObject($command->getIndexName(), $command->getUniqueId());
 
                 return (new IndexerResponse())
                     ->setSuccess(true)
