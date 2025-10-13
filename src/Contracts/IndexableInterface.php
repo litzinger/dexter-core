@@ -8,6 +8,8 @@ interface IndexableInterface
 
     public function getEntity();
 
+    public function getTypes(): array;
+
     public function get(string $key): mixed;
 
     public function getValues(): array;
