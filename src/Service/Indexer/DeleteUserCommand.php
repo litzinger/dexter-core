@@ -5,7 +5,7 @@ namespace Litzinger\DexterCore\Service\Indexer;
 use Litzinger\DexterCore\Contracts\ConfigInterface;
 use Litzinger\DexterCore\Contracts\IndexableInterface;
 
-class DeleteEntryCommand implements DeleteCommand
+class DeleteUserCommand implements DeleteCommand
 {
     public function __construct(
         public string $indexName,
@@ -32,7 +32,7 @@ class DeleteEntryCommand implements DeleteCommand
 
     public function getUniqueId(): string
     {
-        return 'entry_' . $this->indexable->getId();
+        return 'user_' . $this->indexable->getId();
     }
 
     public function getQueueJobName(): string

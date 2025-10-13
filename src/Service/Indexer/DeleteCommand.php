@@ -8,7 +8,7 @@ interface DeleteCommand extends QueueableCommand
 {
     public function execute(): bool;
 
-    public function getId(): int;
+    public function getId(): int|string;
 
     public function getUniqueId(): string;
 

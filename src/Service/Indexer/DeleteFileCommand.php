@@ -25,7 +25,7 @@ class DeleteFileCommand implements DeleteCommand
         return $this->indexName;
     }
 
-    public function getId(): int
+    public function getId(): int|string
     {
         return $this->indexable->getId();
     }
@@ -37,6 +37,6 @@ class DeleteFileCommand implements DeleteCommand
 
     public function getQueueJobName(): string
     {
-        return 'delete-file';
+        return $this->queueJobName;
     }
 }
