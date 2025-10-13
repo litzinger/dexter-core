@@ -13,4 +13,8 @@ interface DeleteCommand extends QueueableCommand
     public function getUniqueId(): string;
 
     public function getIndexName(): string;
+
+    public function getValues(): array;
+
+    public function getQueueJobName(): string;
 }

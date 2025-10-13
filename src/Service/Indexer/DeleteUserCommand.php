@@ -25,6 +25,11 @@ class DeleteUserCommand implements DeleteCommand
         return $this->indexName;
     }
 
+    public function getValues(): array
+    {
+        return $this->indexable->getValues();
+    }
+
     public function getId(): int|string
     {
         return $this->indexable->getId();

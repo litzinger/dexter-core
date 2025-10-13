@@ -166,7 +166,7 @@ class Algolia implements IndexProvider
         try {
             if ($command->getIndexName()) {
                 if ($this->shouldUseQueue && $shouldQueue) {
-                    $this->queue->push($command->getQueueJobName(), ['id' => $command->getUniqueId()]);
+                    $this->queue->push($command->getQueueJobName(), $command->getValues());
 
                     return (new IndexerResponse())
                         ->setSuccess(true)
