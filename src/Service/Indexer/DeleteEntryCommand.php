@@ -9,8 +9,8 @@ class DeleteEntryCommand implements DeleteCommand
 {
     public function __construct(
         public string $indexName,
-        public IndexableInterface $indexable,
-        public ConfigInterface $config,
+        public int|string $id,
+        public string $title = '',
         public string $queueJobName,
     ) {
     }
@@ -25,19 +25,19 @@ class DeleteEntryCommand implements DeleteCommand
         return $this->indexName;
     }
 
-    public function getValues(): array
-    {
-        return $this->indexable->getValues();
-    }
-
     public function getId(): int|string
     {
-        return $this->indexable->getId();
+        return $this->id;
+    }
+
+    public function getTitle(): string
+    {
+        return $this->title;
     }
 
     public function getUniqueId(): string
     {
-        return 'entry_' . $this->indexable->getId();
+        return 'entry_' . $this->id;
     }
 
     public function getQueueJobName(): string
