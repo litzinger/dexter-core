@@ -5,12 +5,12 @@ namespace Litzinger\DexterCore\Service\Indexer;
 use Litzinger\DexterCore\Contracts\ConfigInterface;
 use Litzinger\DexterCore\Contracts\IndexableInterface;
 
-class DeleteFileCommand implements DeleteCommand
+class DeleteCategoryCommand implements DeleteCommand
 {
     public function __construct(
         public string $indexName,
-        public IndexableInterface $indexable,
-        public ConfigInterface $config,
+        public int|string $id,
+        public string $title = '',
         public string $queueJobName,
     ) {
     }
@@ -25,19 +25,19 @@ class DeleteFileCommand implements DeleteCommand
         return $this->indexName;
     }
 
-    public function getValues(): array
-    {
-        return $this->indexable->getValues();
-    }
-
     public function getId(): int|string
     {
-        return $this->indexable->getId();
+        return $this->id;
+    }
+
+    public function getTitle(): string
+    {
+        return $this->title;
     }
 
     public function getUniqueId(): string
     {
-        return 'category_' . $this->indexable->getId();
+        return 'category_' . $this->id;
     }
 
     public function getQueueJobName(): string
